@@ -40,17 +40,17 @@ ft_lstclear_bonus.o ft_lstlast_bonus.o ft_lstsize_bonus.o \
 
 all: $(NAME) bonus
 
-$(NAME): bonus 
+$(NAME)
 	$(G) -c $(SRC)
 	ar rc $(NAME) $(O)
 	ranlib $(NAME)
-	
+
 bonus:
 	$(G) -c $(SRCBNS)
 	ar rc $(NAME) $(OB)
 	ranlib $(NAME)
 
-clean: 
+clean:
 	rm -f $(O) $(OB)
 fclean: clean
 	rm -f $(NAME)
