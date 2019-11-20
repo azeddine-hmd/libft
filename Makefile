@@ -40,7 +40,7 @@ ft_lstclear_bonus.o ft_lstlast_bonus.o ft_lstsize_bonus.o \
 
 all: $(NAME)
 
-$(NAME)
+$(NAME):
 	$(G) -c $(SRC)
 	ar rc $(NAME) $(O)
 	ranlib $(NAME)
